@@ -11,7 +11,6 @@ import { useSearchParams } from 'next/navigation'
 export default function Page () {
     const params = useSearchParams()
     const next = params.get('next') || ""
-    console.log(next)
 
     const handleLoginWithOAuth = (provider: 'github' | 'google') => {
         const supabase = supabaseBrowser()
